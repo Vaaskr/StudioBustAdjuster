@@ -5,7 +5,7 @@ Currently Works with Koikatsu
 
 ## Features
 - Sliders that adjust both the main settings and the extra settings of a characters bust
-- Adds Timeline Compatiblity so values can be changed by Timeline
+- Adds Timeline Compatiblity so values can be changed via Timeline
 
 ## How to install
 1. Install latest BepInEx5, BepisPlugins and KKAPI.
