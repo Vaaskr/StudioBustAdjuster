@@ -12,4 +12,4 @@ Currently Works with Koikatsu
 2. Download the latest release of the plugin you want.
 3. Extract the archive into your game directory. The plugin .dll should end up inside your BepInEx\plugins directory.
 
-The sliders can be found within the Current State tab of a character and are labeled Studio Bust Adjuster & Studio Bust Enhancer 
+The sliders can be found within the Current State tab of a character and are labeled Studio Bust Adjuster & Studio Bust Extra
