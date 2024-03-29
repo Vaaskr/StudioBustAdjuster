@@ -13,5 +13,6 @@ Currently Works with Koikatsu
 3. Extract the archive into your game directory. The plugin .dll should end up inside your BepInEx\plugins directory.
 
 The Main sliders can be found within the Current State tab of a character and is labeled Studio Bust Adjuster.
-[!NOTE]
-The Bust Scale can be editited through KKABMX(BonemodX) by editing the scale of bones that start with "cf_d_bust0#_#", "cf_d_bust##_#" or "cf_hit_bust02_#"  
+
+The Bust Scale can be editited through KKABMX(BonemodX) by editing the scale of bones that start with \"cf_d_bust0#\_#",   
+\"cf_d_bust##\_#" or \"cf_hit_bust02\_#"  
