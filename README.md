@@ -14,5 +14,5 @@ Currently Works with Koikatsu
 
 The Main sliders can be found within the Current State tab of a character and is labeled Studio Bust Adjuster.
 
-The Bust Scale can be editited through KKABMX(BonemodX) by editing the scale of bones that start with "cf_d_bust0#_#" while the extra bust scale can be edited with bones that start with "cf_s_bust0#_#".
+The Bust Scale can be editited through KKABMX(BonemodX) by editing the scale of bones that start with "cf_d_bust##_L" or "cf_d_bust##_R"  while the extra bust scale can be edited with bones that start with "cf_s_bust##_L" or "cf_s_bust##_R".
 The Bust Collison scale can also be edited through "cf_hit_bust02_#".  
