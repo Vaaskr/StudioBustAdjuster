@@ -38,52 +38,60 @@ namespace KK_StudioBustAdjuster
             {
                 this.RegisterStudioControls();
                 StudioBustSizeTimeline.PopulateTimeline();
-                CharacterApi.RegisterExtraBehaviour<StudioBustAdjsuterController>(GUID);
+                CharacterApi.RegisterExtraBehaviour<StudioBustAdjusterController>(GUID);
             }
         }
         private void RegisterStudioControls()
         {
             CurrentStateCategory BustStateCategories = StudioAPI.GetOrCreateCurrentStateCategory("Studio Bust Adjuster");
-            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Size", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetShapeBodyValue(4), 0f, 1f)).Value, delegate (float f)
+            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Size", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetComponent<StudioBustAdjusterController>().BustSize, 0f, 1f)).Value, delegate (float f)
             {
                 StudioBustAdjuster.UpdateBustAdjustmentProportions(f, StudioBustAdjuster.Bust.Size);
             });
-            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Vertical Position", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetShapeBodyValue(5), -1f, 2f)).Value, delegate (float f)
+            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Vertical Position", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetComponent<StudioBustAdjusterController>().BustVertPos, -1f, 2f)).Value, delegate (float f)
             {
                 StudioBustAdjuster.UpdateBustAdjustmentProportions(f, StudioBustAdjuster.Bust.VertPos);
             });
-            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Horizontal Angle", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetShapeBodyValue(6), -1f, 2f)).Value, delegate (float f)
+            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Horizontal Angle", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetComponent<StudioBustAdjusterController>().BustHorzAngle, -1f, 2f)).Value, delegate (float f)
             {
                 StudioBustAdjuster.UpdateBustAdjustmentProportions(f, StudioBustAdjuster.Bust.HorzAngle);
             });
-            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Horizontal Position", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetShapeBodyValue(7), -1f, 2f)).Value, delegate (float f)
+            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Horizontal Position", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetComponent<StudioBustAdjusterController>().BustHorzPos, -1f, 2f)).Value, delegate (float f)
             {
                 StudioBustAdjuster.UpdateBustAdjustmentProportions(f, StudioBustAdjuster.Bust.HorzPos);
             });
-            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Vertical Angle", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetShapeBodyValue(8), -1f, 2f)).Value, delegate (float f)
+            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Vertical Angle", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetComponent<StudioBustAdjusterController>().BustVertAngle, -1f, 2f)).Value, delegate (float f)
             {
                 StudioBustAdjuster.UpdateBustAdjustmentProportions(f, StudioBustAdjuster.Bust.VertAngle);
             });
-            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Pointiness", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetShapeBodyValue(9), -1f, 2f)).Value, delegate (float f)
+            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Pointiness", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetComponent<StudioBustAdjusterController>().BustPointness, -1f, 2f)).Value, delegate (float f)
             {
                 StudioBustAdjuster.UpdateBustAdjustmentProportions(f, StudioBustAdjuster.Bust.Pointiness);
             });
-            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Shape", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetShapeBodyValue(10), -1f, 2f)).Value, delegate (float f)
+            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Shape", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetComponent<StudioBustAdjusterController>().BustShape, -1f, 2f)).Value, delegate (float f)
             {
                 StudioBustAdjuster.UpdateBustAdjustmentProportions(f, StudioBustAdjuster.Bust.Shape);
             });
-            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Areola Bulge", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetShapeBodyValue(11), -1f, 2f)).Value, delegate (float f)
+            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Softness", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetComponent<StudioBustAdjusterController>().BustSoftness, -1f, 2f)).Value, delegate (float f)
+            {
+                StudioBustAdjuster.UpdateBustAdjustmentProportions(f, StudioBustAdjuster.Bust.Softness);
+            });
+            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Weight", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetComponent<StudioBustAdjusterController>().BustWeight, -1f, 2f)).Value, delegate (float f)
+            {
+                StudioBustAdjuster.UpdateBustAdjustmentProportions(f, StudioBustAdjuster.Bust.Weight);
+            });
+            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Areola Bulge", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetComponent<StudioBustAdjusterController>().AreolaBulge, -1f, 2f)).Value, delegate (float f)
             {
                 StudioBustAdjuster.UpdateBustAdjustmentProportions(f, StudioBustAdjuster.Bust.AreolaBulge);
             });
-            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Nipple Circumference", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetShapeBodyValue(12), -1f, 2f)).Value, delegate (float f)
+            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Nipple Circumference", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetComponent<StudioBustAdjusterController>().NipCircumfrence, -1f, 2f)).Value, delegate (float f)
             {
                 StudioBustAdjuster.UpdateBustAdjustmentProportions(f, StudioBustAdjuster.Bust.NipCircum);
             });
-            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Nipple Protrusion", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetShapeBodyValue(13), -1f, 2f)).Value, delegate (float f)
+            ObservableExtensions.Subscribe<float>(BustStateCategories.AddControl<CurrentStateCategorySlider>(new CurrentStateCategorySlider("   Nipple Protrusion", (OCIChar Char) => StudioObjectExtensions.GetChaControl(Char).GetComponent<StudioBustAdjusterController>().NipProtrusion, -1f, 2f)).Value, delegate (float f)
             {
                 StudioBustAdjuster.UpdateBustAdjustmentProportions(f, StudioBustAdjuster.Bust.NipProtrusion);
-            }); 
+            });
         }
         internal static void UpdateBustAdjustmentProportions(float value, StudioBustAdjuster.Bust bust)
         {
@@ -95,80 +103,84 @@ namespace KK_StudioBustAdjuster
         internal static void UpdateBustAdjustmentProportions(OCIChar ociChar, float value, StudioBustAdjuster.Bust bust)
         {
             ChaControl chaControl = StudioObjectExtensions.GetChaControl(ociChar);
-            StudioBustAdjsuterController bustController = chaControl.GetComponent<StudioBustAdjsuterController>();
+            StudioBustAdjusterController bustController = chaControl.GetComponent<StudioBustAdjusterController>();
+
             if (bust == StudioBustAdjuster.Bust.Size)
             {
                 bustController.BustSize = value;
-                chaControl.SetShapeBodyValue(4, bustController.BustSize);
-                chaControl.GetComponent<Pushup.PushupController>().BaseData.Size = bustController.BustSize;
+                bustController.setPushupBodyData();
                 return;
             }
             if (bust == StudioBustAdjuster.Bust.VertPos)
             {
                 bustController.BustVertPos = value;
-                chaControl.SetShapeBodyValue(5, value);
-                chaControl.GetComponent<Pushup.PushupController>().BaseData.VerticalPosition = value;
+                bustController.setPushupBodyData();
                 return;
             }
             if (bust == StudioBustAdjuster.Bust.HorzAngle)
             {
                 bustController.BustHorzAngle = value;
-                chaControl.SetShapeBodyValue(6, value);
-                chaControl.GetComponent<Pushup.PushupController>().BaseData.HorizontalAngle = value;
+                bustController.setPushupBodyData();
                 return;
             }
             if (bust == StudioBustAdjuster.Bust.HorzPos)
             {
                 bustController.BustHorzPos = value;
-                chaControl.SetShapeBodyValue(7, value);
-                chaControl.GetComponent<Pushup.PushupController>().BaseData.HorizontalPosition = value;
+                bustController.setPushupBodyData();
                 return;
             }
             if (bust == StudioBustAdjuster.Bust.VertAngle)
             {
                 bustController.BustVertAngle = value;
-                chaControl.SetShapeBodyValue(8, value);
-                chaControl.GetComponent<Pushup.PushupController>().BaseData.VerticalAngle = value;
+                bustController.setPushupBodyData();
                 return;
             }
             if (bust == StudioBustAdjuster.Bust.Pointiness)
             {
                 bustController.BustPointness= value;
-                chaControl.SetShapeBodyValue(9, value);
-                chaControl.GetComponent<Pushup.PushupController>().BaseData.Depth = value;
+                bustController.setPushupBodyData();
                 return;
             }
             if (bust == StudioBustAdjuster.Bust.Shape)
             {
                 bustController.BustShape = value;
-                chaControl.SetShapeBodyValue(10, value);
-                chaControl.GetComponent<Pushup.PushupController>().BaseData.Roundness = value;
+                bustController.setPushupBodyData();
+                return;
+            }
+            if (bust == StudioBustAdjuster.Bust.Softness)
+            {
+                bustController.BustSoftness = value;
+                bustController.setPushupBodyData();
+                return;
+            }
+            if (bust == StudioBustAdjuster.Bust.Weight)
+            {
+                bustController.BustWeight = value;
+                bustController.setPushupBodyData();
                 return;
             }
             if (bust == StudioBustAdjuster.Bust.AreolaBulge)
             {
                 bustController.AreolaBulge = value;
-                chaControl.SetShapeBodyValue(11, value);
-                chaControl.GetComponent<Pushup.PushupController>().BaseData.AreolaDepth = value;
+                bustController.setPushupBodyData();
                 return;
             }
             if (bust == StudioBustAdjuster.Bust.NipCircum)
             {
                 bustController.NipCircumfrence = value;
-                chaControl.SetShapeBodyValue(12, value);
-                chaControl.GetComponent<Pushup.PushupController>().BaseData.NippleWidth = value;
+                bustController.setPushupBodyData();
                 return;
             }
             if (bust == StudioBustAdjuster.Bust.NipProtrusion)
             {
                 bustController.NipProtrusion = value;
-                chaControl.SetShapeBodyValue(13, value);
-                chaControl.GetComponent<Pushup.PushupController>().BaseData.NippleDepth = value;
+                bustController.setPushupBodyData();
                 return;
             }
         }
         internal enum Bust
         {
+            Null,
             Size,
             VertPos,
             HorzAngle,
@@ -176,30 +188,12 @@ namespace KK_StudioBustAdjuster
             VertAngle,
             Pointiness,
             Shape,
+            Softness,
+            Weight,
             AreolaBulge,
             NipCircum,
             NipProtrusion,
             AreolaSize,
         }
-        internal enum ExtraBust
-        {
-            Scale1,
-            Scale2,
-            Scale3,
-            XtraScale0,
-            XtraScale1,
-            XtraScale2,
-            XtraScale3,
-            BustColZ,
-        }
-      
-        public static Vector3 _LRbustscale1;
-        public static Vector3 _LRbustscale2;
-        public static Vector3 _LRbustscale3;
-        public static Vector3 _LRxtrabustscale0;
-        public static Vector3 _LRxtrabustscale1;
-        public static Vector3 _LRxtrabustscale2;
-        public static Vector3 _LRxtrabustscale3;
-        public static Vector3 _LRbustcollidescale;
     }
 }
