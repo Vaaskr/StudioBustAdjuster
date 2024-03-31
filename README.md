@@ -1,5 +1,5 @@
 # StudioBustAdjuster
-Allows to change most settings of a characters bust within CharaStudio.
+Allows to change the bust settings of a characters within CharaStudio.
 
 Currently Works with Koikatsu
 
