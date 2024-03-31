@@ -4,7 +4,7 @@ Allows to change most settings of a characters bust within CharaStudio.
 Currently Works with Koikatsu
 
 ## Features
-- Sliders that adjust main Values of a characters bust
+- Sliders that adjust the main Values of a characters bust
 - Adds Timeline Compatiblity for Bust values and the Bust Scale Values which can be changed via Timeline
 
 ## How to install
