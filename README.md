@@ -1,5 +1,5 @@
 # StudioBustAdjuster
-Allows to change the bust settings of a character within Studio.
+Allows to change the Bust Values of a character within Studio.
 
 ## Features
 - Sliders that adjust the main Values of a characters bust
