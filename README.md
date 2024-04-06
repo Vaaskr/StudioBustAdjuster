@@ -14,6 +14,4 @@ The Main sliders can be found within the Current State tab of a character and is
 
 The Bust Scale can be edited through KKABMX(BonemodX) by editing the scale of bones that start with \"cf_d_bust0#\_#", \"cf_s_bust0#\_#". \"cf_hit_bust02\_#" can be used to edit the bust Collison.
 
-## Preview:
-https://github.com/Vaaskr/StudioBustAdjuster/assets/38697288/ba9e5706-5adf-4372-8cf3-97b6216e1f86
 
