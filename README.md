@@ -1,8 +1,6 @@
 # StudioBustAdjuster
 Allows to change the bust settings of a character within Studio.
 
-Currently Works with Koikatsu
-
 ## Features
 - Sliders that adjust the main Values of a characters bust
 - Adds Timeline Compatiblity for Bust values and the Bust Scale Values which can be changed via Timeline
