@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Core.StudioBustAdjuster", "Core.StudioBustAdjuster\Core.StudioBustAdjuster.shproj", "{9C54A1F0-CC76-4FA5-AFBB-DAE841414D4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KK.StudioBustAdjuster", "KK.StudioBustAdjuster\KK.StudioBustAdjuster.csproj", "{2EC4895D-DB75-489F-BF97-EB8FDB300241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KKS.StudioBustAdjuster", "KKS.StudioBustAdjuster\KKS.StudioBustAdjuster.csproj", "{106E5685-E8D5-4093-A001-E1EB9DD3D8D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EC4895D-DB75-489F-BF97-EB8FDB300241}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC4895D-DB75-489F-BF97-EB8FDB300241}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC4895D-DB75-489F-BF97-EB8FDB300241}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC4895D-DB75-489F-BF97-EB8FDB300241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106E5685-E8D5-4093-A001-E1EB9DD3D8D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106E5685-E8D5-4093-A001-E1EB9DD3D8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106E5685-E8D5-4093-A001-E1EB9DD3D8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106E5685-E8D5-4093-A001-E1EB9DD3D8D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26DE03C1-23D5-4376-983A-96B49EFB8E82}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Core.StudioBustAdjuster\Core.StudioBustAdjuster.projitems*{106e5685-e8d5-4093-a001-e1eb9dd3d8d7}*SharedItemsImports = 4
+		Core.StudioBustAdjuster\Core.StudioBustAdjuster.projitems*{2ec4895d-db75-489f-bf97-eb8fdb300241}*SharedItemsImports = 4
+		Core.StudioBustAdjuster\Core.StudioBustAdjuster.projitems*{9c54a1f0-cc76-4fa5-afbb-dae841414d4f}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal
