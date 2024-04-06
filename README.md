@@ -12,4 +12,4 @@ Allows to change the bust settings of a character within Studio.
 
 The Main sliders can be found within the Current State tab of a character and is labeled Studio Bust Adjuster.
 
-The Bust Scale can be editited through KKABMX(BonemodX) by editing the scale of bones that start with \"cf_d_bust0#\_#", \"cf_s_bust0#\_#". \"cf_hit_bust02\_#" can be used to edit the bust collison.
+The Bust Scale can be edited through KKABMX(BonemodX) by editing the scale of bones that start with \"cf_d_bust0#\_#", \"cf_s_bust0#\_#". \"cf_hit_bust02\_#" can be used to edit the bust Collison.
