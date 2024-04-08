@@ -22,7 +22,7 @@ namespace StudioBustAdjuster
     public partial class StudioBustAdjuster : BaseUnityPlugin
     {
         public const string GUID = "Vaaskr.StudioBustAdjuster";
-        public const string Version = "1.1.0";
+        public const string Version = "1.0.1";
         internal static new ManualLogSource Logger;
         private void Awake()
         {
