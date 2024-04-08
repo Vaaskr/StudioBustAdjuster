@@ -166,6 +166,56 @@ namespace StudioBustAdjuster
                 GetBoneScale((OCIChar)oci, "cf_hit_bust02_R").ScaleModifier = Vector3.LerpUnclamped(leftValue, rightValue, factor);
 
             }, null, (ObjectCtrlInfo oci) => oci is OCIChar, (ObjectCtrlInfo oci, ObjectCtrlInfo parameter) => GetBoneScale((OCIChar)oci, "cf_hit_bust02_R").ScaleModifier, new Func<ObjectCtrlInfo, XmlNode, Vector3>(StudioBustAdjusterTimeline.ReadVector3XML), new Action<ObjectCtrlInfo, XmlTextWriter, Vector3>(StudioBustAdjusterTimeline.WriteVector3XML), (ObjectCtrlInfo oci) => oci, null, null, null, true, null, null);
+            TimelineCompatibility.AddInterpolableModelDynamic<Vector3, ObjectCtrlInfo>("BustAdjustment", "areolaScale1L", "Areola L. Scale 1", delegate (ObjectCtrlInfo oci, ObjectCtrlInfo parameter, Vector3 leftValue, Vector3 rightValue, float factor)
+            {
+                GetBoneScale((OCIChar)oci, "cf_s_bnip01_L").ScaleModifier = Vector3.LerpUnclamped(leftValue, rightValue, factor);
+
+            }, null, (ObjectCtrlInfo oci) => oci is OCIChar, (ObjectCtrlInfo oci, ObjectCtrlInfo parameter) => GetBoneScale((OCIChar)oci, "cf_s_bnip01_L").ScaleModifier, new Func<ObjectCtrlInfo, XmlNode, Vector3>(StudioBustAdjusterTimeline.ReadVector3XML), new Action<ObjectCtrlInfo, XmlTextWriter, Vector3>(StudioBustAdjusterTimeline.WriteVector3XML), (ObjectCtrlInfo oci) => oci, null, null, null, true, null, null);
+            TimelineCompatibility.AddInterpolableModelDynamic<Vector3, ObjectCtrlInfo>("BustAdjustment", "areolaScale1R", "Areola R. Scale 1", delegate (ObjectCtrlInfo oci, ObjectCtrlInfo parameter, Vector3 leftValue, Vector3 rightValue, float factor)
+            {
+                GetBoneScale((OCIChar)oci, "cf_s_bnip01_R").ScaleModifier = Vector3.LerpUnclamped(leftValue, rightValue, factor);
+
+            }, null, (ObjectCtrlInfo oci) => oci is OCIChar, (ObjectCtrlInfo oci, ObjectCtrlInfo parameter) => GetBoneScale((OCIChar)oci, "cf_s_bnip01_R").ScaleModifier, new Func<ObjectCtrlInfo, XmlNode, Vector3>(StudioBustAdjusterTimeline.ReadVector3XML), new Action<ObjectCtrlInfo, XmlTextWriter, Vector3>(StudioBustAdjusterTimeline.WriteVector3XML), (ObjectCtrlInfo oci) => oci, null, null, null, true, null, null);
+            TimelineCompatibility.AddInterpolableModelDynamic<Vector3, ObjectCtrlInfo>("BustAdjustment", "areolaScale2L", "Areola L. Scale 2", delegate (ObjectCtrlInfo oci, ObjectCtrlInfo parameter, Vector3 leftValue, Vector3 rightValue, float factor)
+            {
+                GetBoneScale((OCIChar)oci, "cf_s_bnip025_L").ScaleModifier = Vector3.LerpUnclamped(leftValue, rightValue, factor);
+
+            }, null, (ObjectCtrlInfo oci) => oci is OCIChar, (ObjectCtrlInfo oci, ObjectCtrlInfo parameter) => GetBoneScale((OCIChar)oci, "cf_s_bnip025_L").ScaleModifier, new Func<ObjectCtrlInfo, XmlNode, Vector3>(StudioBustAdjusterTimeline.ReadVector3XML), new Action<ObjectCtrlInfo, XmlTextWriter, Vector3>(StudioBustAdjusterTimeline.WriteVector3XML), (ObjectCtrlInfo oci) => oci, null, null, null, true, null, null);
+            TimelineCompatibility.AddInterpolableModelDynamic<Vector3, ObjectCtrlInfo>("BustAdjustment", "areolaScale2R", "Areola R. Scale 2", delegate (ObjectCtrlInfo oci, ObjectCtrlInfo parameter, Vector3 leftValue, Vector3 rightValue, float factor)
+            {
+                GetBoneScale((OCIChar)oci, "cf_s_bnip025_R").ScaleModifier = Vector3.LerpUnclamped(leftValue, rightValue, factor);
+
+            }, null, (ObjectCtrlInfo oci) => oci is OCIChar, (ObjectCtrlInfo oci, ObjectCtrlInfo parameter) => GetBoneScale((OCIChar)oci, "cf_s_bnip025_R").ScaleModifier, new Func<ObjectCtrlInfo, XmlNode, Vector3>(StudioBustAdjusterTimeline.ReadVector3XML), new Action<ObjectCtrlInfo, XmlTextWriter, Vector3>(StudioBustAdjusterTimeline.WriteVector3XML), (ObjectCtrlInfo oci) => oci, null, null, null, true, null, null);
+            TimelineCompatibility.AddInterpolableModelDynamic<Vector3, ObjectCtrlInfo>("BustAdjustment", "nipScaleL", "Nipple L. Scale", delegate (ObjectCtrlInfo oci, ObjectCtrlInfo parameter, Vector3 leftValue, Vector3 rightValue, float factor)
+            {
+                GetBoneScale((OCIChar)oci, "cf_d_bnip01_L").ScaleModifier = Vector3.LerpUnclamped(leftValue, rightValue, factor);
+
+            }, null, (ObjectCtrlInfo oci) => oci is OCIChar, (ObjectCtrlInfo oci, ObjectCtrlInfo parameter) => GetBoneScale((OCIChar)oci, "cf_d_bnip01_L").ScaleModifier, new Func<ObjectCtrlInfo, XmlNode, Vector3>(StudioBustAdjusterTimeline.ReadVector3XML), new Action<ObjectCtrlInfo, XmlTextWriter, Vector3>(StudioBustAdjusterTimeline.WriteVector3XML), (ObjectCtrlInfo oci) => oci, null, null, null, true, null, null);
+            TimelineCompatibility.AddInterpolableModelDynamic<Vector3, ObjectCtrlInfo>("BustAdjustment", "nipScaleR", "Nipple R. Scale", delegate (ObjectCtrlInfo oci, ObjectCtrlInfo parameter, Vector3 leftValue, Vector3 rightValue, float factor)
+            {
+                GetBoneScale((OCIChar)oci, "cf_d_bnip01_R").ScaleModifier = Vector3.LerpUnclamped(leftValue, rightValue, factor);
+
+            }, null, (ObjectCtrlInfo oci) => oci is OCIChar, (ObjectCtrlInfo oci, ObjectCtrlInfo parameter) => GetBoneScale((OCIChar)oci, "cf_d_bnip01_R").ScaleModifier, new Func<ObjectCtrlInfo, XmlNode, Vector3>(StudioBustAdjusterTimeline.ReadVector3XML), new Action<ObjectCtrlInfo, XmlTextWriter, Vector3>(StudioBustAdjusterTimeline.WriteVector3XML), (ObjectCtrlInfo oci) => oci, null, null, null, true, null, null);
+            TimelineCompatibility.AddInterpolableModelDynamic<Vector3, ObjectCtrlInfo>("BustAdjustment", "nipTipScaleL", "Nipple Tip L. Scale", delegate (ObjectCtrlInfo oci, ObjectCtrlInfo parameter, Vector3 leftValue, Vector3 rightValue, float factor)
+            {
+                GetBoneScale((OCIChar)oci, "cf_s_bnip02_L").ScaleModifier = Vector3.LerpUnclamped(leftValue, rightValue, factor);
+
+            }, null, (ObjectCtrlInfo oci) => oci is OCIChar, (ObjectCtrlInfo oci, ObjectCtrlInfo parameter) => GetBoneScale((OCIChar)oci, "cf_s_bnip02_L").ScaleModifier, new Func<ObjectCtrlInfo, XmlNode, Vector3>(StudioBustAdjusterTimeline.ReadVector3XML), new Action<ObjectCtrlInfo, XmlTextWriter, Vector3>(StudioBustAdjusterTimeline.WriteVector3XML), (ObjectCtrlInfo oci) => oci, null, null, null, true, null, null);
+            TimelineCompatibility.AddInterpolableModelDynamic<Vector3, ObjectCtrlInfo>("BustAdjustment", "nipTipScaleR", "Nipple Tip R. Scale", delegate (ObjectCtrlInfo oci, ObjectCtrlInfo parameter, Vector3 leftValue, Vector3 rightValue, float factor)
+            {
+                GetBoneScale((OCIChar)oci, "cf_s_bnip02_R").ScaleModifier = Vector3.LerpUnclamped(leftValue, rightValue, factor);
+
+            }, null, (ObjectCtrlInfo oci) => oci is OCIChar, (ObjectCtrlInfo oci, ObjectCtrlInfo parameter) => GetBoneScale((OCIChar)oci, "cf_s_bnip02_R").ScaleModifier, new Func<ObjectCtrlInfo, XmlNode, Vector3>(StudioBustAdjusterTimeline.ReadVector3XML), new Action<ObjectCtrlInfo, XmlTextWriter, Vector3>(StudioBustAdjusterTimeline.WriteVector3XML), (ObjectCtrlInfo oci) => oci, null, null, null, true, null, null);
+            TimelineCompatibility.AddInterpolableModelDynamic<Vector3, ObjectCtrlInfo>("BustAdjustment", "nipAccScaleL", "Nipple Accessory L. Scale", delegate (ObjectCtrlInfo oci, ObjectCtrlInfo parameter, Vector3 leftValue, Vector3 rightValue, float factor)
+            {
+                GetBoneScale((OCIChar)oci, "cf_s_bnipacc_L").ScaleModifier = Vector3.LerpUnclamped(leftValue, rightValue, factor);
+
+            }, null, (ObjectCtrlInfo oci) => oci is OCIChar, (ObjectCtrlInfo oci, ObjectCtrlInfo parameter) => GetBoneScale((OCIChar)oci, "cf_s_bnipacc_L").ScaleModifier, new Func<ObjectCtrlInfo, XmlNode, Vector3>(StudioBustAdjusterTimeline.ReadVector3XML), new Action<ObjectCtrlInfo, XmlTextWriter, Vector3>(StudioBustAdjusterTimeline.WriteVector3XML), (ObjectCtrlInfo oci) => oci, null, null, null, true, null, null);
+            TimelineCompatibility.AddInterpolableModelDynamic<Vector3, ObjectCtrlInfo>("BustAdjustment", "nipAccScaleR", "Nipple Accessory R. Scale", delegate (ObjectCtrlInfo oci, ObjectCtrlInfo parameter, Vector3 leftValue, Vector3 rightValue, float factor)
+            {
+                GetBoneScale((OCIChar)oci, "cf_s_bnipacc_R").ScaleModifier = Vector3.LerpUnclamped(leftValue, rightValue, factor);
+
+            }, null, (ObjectCtrlInfo oci) => oci is OCIChar, (ObjectCtrlInfo oci, ObjectCtrlInfo parameter) => GetBoneScale((OCIChar)oci, "cf_s_bnipacc_R").ScaleModifier, new Func<ObjectCtrlInfo, XmlNode, Vector3>(StudioBustAdjusterTimeline.ReadVector3XML), new Action<ObjectCtrlInfo, XmlTextWriter, Vector3>(StudioBustAdjusterTimeline.WriteVector3XML), (ObjectCtrlInfo oci) => oci, null, null, null, true, null, null);
         }
         private static void WriteVector3XML(ObjectCtrlInfo oci, XmlTextWriter writer, Vector3 value)
         {

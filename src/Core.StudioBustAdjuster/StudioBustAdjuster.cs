@@ -15,7 +15,7 @@ using static KK_Plugins.Pushup;
 namespace StudioBustAdjuster
 {
     [BepInProcess("CharaStudio")]
-    [BepInPlugin(GUID, "Studio Bust Adjuster", Version)]
+    [BepInPlugin(GUID, "StudioBustAdjuster", Version)]
     [BepInDependency(KoikatuAPI.GUID, KoikatuAPI.VersionConst)]
     [BepInDependency(KKABMX_Core.GUID, "5.1")]
     [BepInDependency(KK_Plugins.Pushup.GUID, "1.3.2")]

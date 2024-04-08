@@ -9,6 +9,7 @@
     <Import_RootNamespace>Core.StudioBustAdjuster</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AssemblyInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StudioBustAdjusterTimeline.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StudioBustAdjuster.cs" />
   </ItemGroup>
